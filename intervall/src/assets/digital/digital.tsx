@@ -23,27 +23,26 @@ const Timer: React.FC<Props> = ({ time, onTimeUp }) => {
   });
 
   React.useEffect(() => {
-    
+
     const timerId = setTimeout(() => {
-        if (state.time === 0) {
-          onTimeUp();
-          return () => {
-            clearTimeout(timerId);
-          };
-            }
-        setState({
-            time: state.time - 1,
-            minutes: Math.floor((state.time - 1) / 60),
-            seconds: state.time - Math.floor((state.time - 1) / 60) * 60 - 1,
-        });
+      if (state.time === 0) {
+        onTimeUp();
+        return () => {
+          clearTimeout(timerId);
+        };
+      }
+      setState({
+        time: state.time - 1,
+        minutes: Math.floor((state.time - 1) / 60),
+        seconds: state.time - Math.floor((state.time - 1) / 60) * 60 - 1,
+      });
     }, 1000);
-    }, [state.time, onTimeUp]);
+  }, [state.time, onTimeUp]);
   return (
     <div className="digitalTimer">
       <div className="timerContainer">
-        <h2>{`${state.minutes}:${
-          state.seconds <= 10 ? `0${state.seconds}` : state.seconds
-        }`}</h2>
+        <h2>{`${state.minutes}:${state.seconds <= 10 ? `0${state.seconds}` : state.seconds
+          }`}</h2>
       </div>
     </div>
   );

@@ -12,10 +12,10 @@ function DropdownMenu() {
 
     return (
         <div className="dropdown">
-            <button className="dropbtn"><img src={menuIcon} alt="menu" onClick={(e) => setIsActive(!isActive)} /></button>
-            <div className="dropdown-content">
+            <button className="dropBtn"><img src={menuIcon} alt="menu" onClick={(e) => setIsActive(!isActive)} /></button>
+            <div className="dropdownContent">
                 {isActive && (
-                    <div className="dropdown-menu">
+                    <div className="dropdownContent__dropdownMenu">
                         <h2>Digital Timer</h2>
                         <h2>Analog Timer</h2>
                         <h2>Visual Timer</h2>

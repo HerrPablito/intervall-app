@@ -5,6 +5,7 @@ import DigitalTimer from "./assets/digitalTimer/digitalTimer.tsx";
 import TimesUp from "./assets/timesUp/timesUp.tsx";
 import Pause from "./assets/pause/pause.tsx";
 
+
 import { createBrowserRouter } from "react-router-dom";
 const router = createBrowserRouter([
   {
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
     path: "/pause",
     element: <Pause />,
     errorElement: <Error />,
-  },
+  }
 ]);
 
 export default router;

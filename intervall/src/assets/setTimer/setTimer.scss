@@ -48,7 +48,6 @@ p {
     font-size: 16px;
     font-weight: 400;
     margin: 0;
-
   }
 }
 
@@ -59,27 +58,23 @@ p {
   justify-content: center;
   margin-top: 4rem;
   gap: 10px;
-  color: $dark-grey 
-    &__intervalBox {
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-
-        
+  color: $dark-grey &__intervalBox {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
   }
   &__intervalBox__text {
     margin: 0;
   }
-      &__breakInterval {
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-      }
-      &__breakInterval__text {
-        margin: 0;
-      }
+  &__breakInterval {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  &__breakInterval__text {
+    margin: 0;
+  }
 }
-
 
 .startBtn {
   width: 279px;
@@ -94,27 +89,32 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  &__startText{
-  font-size: 20px;    
+  &__startText {
+    font-size: 20px;
   }
-
 }
 
-.addition{
+.addition {
   font-size: 60px;
   margin-left: 2rem;
   border: none;
   padding: 2rem;
 }
-.subtract{
+.subtract {
   font-size: 60px;
   margin-right: 2rem;
   border: none;
   padding: 2rem;
 }
 
-.menuContainer{
- margin-bottom: auto;
- margin-right: auto;
- padding: 1rem;
+.menuContainer {
+  margin-bottom: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.menuContainer:active {
+  margin-bottom: auto;
+  margin-right: auto;
+  padding: 1rem;
 }
