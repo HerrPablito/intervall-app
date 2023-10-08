@@ -1,0 +1,45 @@
+@import "../../../SCSS/variables.scss";
+@import "../../../SCSS/typography.scss";
+
+.timesUp {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: $container-width;
+  height: $container-height;
+  background-color: $dark-grey;
+  color: $light-grey;
+  background: radial-gradient(circle closest-side, rgb(87, 86, 86) 15%, $dark-grey 150%);
+}
+
+.timesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  &__timesUpText{
+    color: $light-grey;
+   
+  }
+  &__btn{
+    width: 132px;
+    height: 41px;
+    border: 1px solid $light-grey;
+    border-radius: 5px;
+    color: $light-grey;
+    background: none;
+    margin-bottom: 2rem;
+    margin-top: 9rem;
+  }
+}
+img{
+    margin-top: auto;
+    margin-bottom: 0;
+}
