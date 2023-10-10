@@ -14,7 +14,11 @@
   height: $container-height;
   background-color: $dark-grey;
   color: $light-grey;
-  background: radial-gradient(circle closest-side, rgb(87, 86, 86) 15%, $dark-grey 150%);
+  background: radial-gradient(
+    circle closest-side,
+    rgb(87, 76, 86) 15%,
+    $dark-grey 150%
+  );
 }
 
 .alarmContainer {
@@ -24,11 +28,10 @@
   justify-content: center;
   height: 100%;
 
-  &__alarmText{
+  &__alarmText {
     color: $light-grey;
-   
   }
-  &__btn{
+  &__btn {
     width: 166px;
     height: 21px;
     border: 1px solid $light-grey;
@@ -38,14 +41,13 @@
     margin-bottom: 2rem;
     margin-top: 9rem;
   }
-  &__time{
+  &__time {
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0rem;
-
   }
 }
-img{
-    margin-top: auto;
-    margin-bottom: 0;
+img {
+  margin-top: auto;
+  margin-bottom: 0;
 }
