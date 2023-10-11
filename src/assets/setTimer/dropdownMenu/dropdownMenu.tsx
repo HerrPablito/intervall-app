@@ -1,7 +1,7 @@
 import menuIcon from "./../../images/navicon.svg";
 import { useState } from "react";
 import "./dropdownMenu.scss";
-import React from "react";
+
 
 
 
@@ -12,7 +12,7 @@ function DropdownMenu() {
 
     return (
         <div className="dropdown">
-            <button className="dropBtn"><img src={menuIcon} alt="menu" onClick={(e) => setIsActive(!isActive)} /></button>
+            <button className="dropBtn"><img src={menuIcon} alt="menu" onClick={() => setIsActive(!isActive)} /></button>
             <div className="dropdownContent">
                 {isActive && (
                     <div className="dropdownContent__dropdownMenu">
