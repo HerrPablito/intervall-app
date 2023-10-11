@@ -1,4 +1,3 @@
-import React from 'react';
 import Timer from '../digital/digital';
 import './digitalTimer.scss';
 import { useLocation } from 'react-router-dom';
