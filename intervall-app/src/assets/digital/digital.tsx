@@ -6,7 +6,7 @@ interface State {
   seconds: number;
   minutes: number;
 }
-console.log("test");
+
 
 interface Props {
   time: number;
