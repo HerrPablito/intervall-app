@@ -1,8 +1,7 @@
 import "./pause.scss"
-import React, { useState } from "react";
+
 import pauseBtn from "./../images/Frame 6.svg";
-//import { useLocation } from 'react-router-dom';
-//import { useNavigate } from "react-router-dom";
+
 
 
 console.log("hej");

@@ -1,7 +1,6 @@
-import { useState } from "react";
+
 import "./loadingpage.scss";
-import SetTimer from "../setTimer/setTimer";
-import { useNavigate } from "react-router-dom";
+
 
 function LoadingPage() {
   return (

@@ -2,7 +2,6 @@ import React from 'react';
 import Timer from '../digital/digital';
 import './digitalTimer.scss';
 import { useLocation } from 'react-router-dom';
-import { Navigate } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 function DigitalTimer() {
